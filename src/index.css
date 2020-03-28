@@ -1,0 +1,103 @@
+* {
+  font-size: 2rem;
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  background: #121212;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #121212;
+}
+
+.Heading {
+  display: inline-flex;
+  margin: 2vmin;
+}
+
+.input {
+  font-family: "Poppins", sans-serif;
+  margin: 0 20px 0 20px;
+  width: 80%;
+}
+
+.input:focus {
+  background-color: rgb(51, 51, 51);
+  transition: 0.4s ease-in-out;
+}
+
+.App {
+  text-align: center;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ddd !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ddd !important;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ddd !important;
+}
+.tex {
+  color: #fff;
+  background: rgb(42, 42, 42);
+}
+
+.empty {
+  margin-top: 10vh;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.empty-svg {
+  width: 10vh;
+  height: 10vh;
+}
+
+.links {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 2vmin 2vmin 2vmin 2vmin !important;
+}
+
+.removebtn {
+  margin-left: 5vw;
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+
+.removebtn svg {
+  width: 25px;
+  height: 25px;
+}
+
+.subtitle {
+  color: #fff !important;
+}
+
+.clearBtn {
+  border: none;
+  padding: 1vh;
+  border-radius: 15px;
+  background-color: #191919;
+  font-size: 0.9vh;
+}
