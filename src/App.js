@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import NotesList from "./NotesList";
-import "./App.css";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       value: "",
-      notes: []
+      notes: [],
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -34,10 +33,10 @@ class App extends Component {
     const notes = [...this.state.notes]; // copy the array
     notes[index] = {
       ...notes[index],
-      done: event.target.checked // update done property on copied todo
+      done: event.target.checked, // update done property on copied todo
     }; // copy the todo can also use Object.assign
     this.setState({
-      notes
+      notes,
     });
   }
 
@@ -46,13 +45,13 @@ class App extends Component {
     notes.splice(index, 1);
 
     this.setState({
-      notes
+      notes,
     });
   }
 
   allDone() {
     this.setState({
-      notes: []
+      notes: [],
     });
   }
 
